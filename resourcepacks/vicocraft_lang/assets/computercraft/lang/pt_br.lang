@@ -1,0 +1,41 @@
+tile.computercraft:computer.name=Computador
+tile.computercraft:advanced_computer.name=Computador Avançado
+tile.computercraft:drive.name=Unidade de Disco
+tile.computercraft:printer.name=Impressora
+tile.computercraft:monitor.name=Monitor
+tile.computercraft:advanced_monitor.name=Monitor Avançado
+tile.computercraft:wireless_modem.name=Modem sem Fio
+tile.computercraft:wired_modem.name=Modem
+tile.computercraft:cable.name=Cabo de Rede
+tile.computercraft:command_computer.name=Computador de Comando
+tile.computercraft:advanced_modem.name=Modem Ender
+
+tile.computercraft:turtle.name=Robô
+tile.computercraft:turtle.upgraded.name=Robô %s
+tile.computercraft:turtle.upgraded_twice.name=Robô %s %s
+tile.computercraft:advanced_turtle.name=Robô Avançado
+tile.computercraft:advanced_turtle.upgraded.name=Robô %s Avançado
+tile.computercraft:advanced_turtle.upgraded_twice.name=Robô %s %s Avançado
+
+item.computercraft:disk.name=Disquete
+item.computercraft:treasure_disk.name=Disquete
+item.computercraft:page.name=Folha Impressa
+item.computercraft:pages.name=Folhas Impressas
+item.computercraft:book.name=Livro Impresso
+
+item.computercraft:pocket_computer.name=Computador de Bolso
+item.computercraft:pocket_computer.upgraded.name=Computador de Bolso %s
+item.computercraft:advanced_pocket_computer.name=Computador de Bolso Avançado
+item.computercraft:advanced_pocket_computer.upgraded.name=Computador de Bolso %s Avançado
+
+upgrade.minecraft:diamond_sword.adjective=Guerreiro
+upgrade.minecraft:diamond_shovel.adjective=Escavador
+upgrade.minecraft:diamond_pickaxe.adjective=Minerador
+upgrade.minecraft:diamond_axe.adjective=Lenhador
+upgrade.minecraft:diamond_hoe.adjective=Agricultor
+upgrade.computercraft:wireless_modem.adjective=Sem Fio
+upgrade.minecraft:crafting_table.adjective=Criador
+upgrade.computercraft:advanced_modem.adjective=Ender
+
+gui.computercraft:wired_modem.peripheral_connected=O periférico "%s" conectou-se à rede
+gui.computercraft:wired_modem.peripheral_disconnected=O periférico "%s" desconectou-se da rede

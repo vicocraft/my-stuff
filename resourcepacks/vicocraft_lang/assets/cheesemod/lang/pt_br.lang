@@ -1,0 +1,39 @@
+itemGroup.cheese=Cheese Mod
+
+command.cheese.usage=This command is just for testing purposes, it will set your hunger bar to half a point.
+
+tile.cheesemod:cheese_maker_oak.name=Bancada do Queijeiro de Carvalho
+tile.cheesemod:cheese_maker_spruce.name=Bancada do Queijeiro de Pinheiro
+tile.cheesemod:cheese_maker_birch.name=Bancada do Queijeiro de Eucalipto
+tile.cheesemod:cheese_maker_jungle.name=Bancada do Queijeiro de Madeira da Selva
+tile.cheesemod:cheese_maker_acaia.name=Bancada do Queijeiro de Acácia
+tile.cheesemod:cheese_maker_darkoak.name=Bancada do Queijeiro de Carvalho Escuro
+
+item.cheesemod:cheese_knife.name=Cortador de Queijos
+item.cheesemod:pizza_cutter.name=Cortador de Pizza
+
+tile.cheesemod:pizza.name=Pizza
+
+item.cheesemod:pizza_item.name=Fatia de Pizza
+item.cheesemod:melted_cheese.name=Queijo Derretido
+item.cheesemod:cheeseburger.name=X-Burger
+
+item.cheesemod:emmental_item.name=Emmentaler
+item.cheesemod:feta_item.name=Feta
+item.cheesemod:gorgonzola_item.name=Gorgonzola
+item.cheesemod:roquefort_item.name=Roquefort
+item.cheesemod:mozzarella_item.name=Mussarela
+item.cheesemod:brie_item.name=Brie
+item.cheesemod:parmesan_item.name=Parmesão
+item.cheesemod:gouda_item.name=Gouda
+item.cheesemod:cheddar_item.name=Cheddar
+
+tile.cheesemod:emmental.name=Emmentaler
+tile.cheesemod:feta.name=Feta
+tile.cheesemod:gorgonzola.name=Gorgonzola
+tile.cheesemod:roquefort.name=Roquefort
+tile.cheesemod:mozzarella.name=Mussarela
+tile.cheesemod:brie.name=Brie
+tile.cheesemod:parmesan.name=Parmesão
+tile.cheesemod:gouda.name=Gouda
+tile.cheesemod:cheddar.name=Cheddar
