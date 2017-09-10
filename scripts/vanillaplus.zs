@@ -10,6 +10,7 @@ val leaves2 = <minecraft:leaves2:*>;
 
 # Corantes
 val cactus_green = <minecraft:dye:2>; // Verde
+val orange_dye = <minecraft:dye:14>; // Laranja
 
 # Lãs
 val any_wool = <minecraft:wool:*>; // Todos os tipos
@@ -28,6 +29,7 @@ val diamond = <minecraft:diamond>;
 # Outros
 val water_bucket = <minecraft:water_bucket>;
 val slime_ball = <minecraft:slime_ball>;
+val pumpkin = <minecraft:pumpkin>;
 val potato = <minecraft:potato>;
 val poisonous_potato = <minecraft:poisonous_potato>;
 val leather = <minecraft:leather>;
@@ -37,10 +39,14 @@ val spider_string = <minecraft:string>;
 val name_tag = <minecraft:name_tag>;
 val elytra = <minecraft:elytra>;
 
+
 // CRAFTING
 # Folha -> Cactus Green
 recipes.addShapeless(cactus_green, [leaves]);
 recipes.addShapeless(cactus_green, [leaves2]);
+
+# Abóbora -> 4 corantes laranja
+recipes.addShapeless(orange_dye * 4, [pumpkin]);
 
 # Cactus Green + Balde d'agua -> Slime Ball
 recipes.addShapeless(slime_ball * 4, [water_bucket, cactus_green]);
