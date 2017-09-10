@@ -19,11 +19,11 @@ val rotten_flesh = <minecraft:rotten_flesh>;
 
 // CRAFTING
 # Folha -> Cactus Green
-recipes.addShapeless(cactus_green,[leaves]);
-recipes.addShapeless(cactus_green,[leaves2]);
+recipes.addShapeless(cactus_green, [leaves]);
+recipes.addShapeless(cactus_green, [leaves2]);
 
 # Cactus Green + Balde d'agua -> Slime Ball
-recipes.addShapeless(slime_ball,[water_bucket,cactus_green]);
+recipes.addShapeless(slime_ball * 4, [water_bucket, cactus_green]);
 
 // FORNALHAS
 
