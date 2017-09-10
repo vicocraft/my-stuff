@@ -12,7 +12,7 @@ val leaves2 = <minecraft:leaves2:*>;
 val cactus_green = <minecraft:dye:2>; // Verde
 val orange_dye = <minecraft:dye:14>; // Laranja
 
-# Lãs
+# LÃ£s
 val any_wool = <minecraft:wool:*>; // Todos os tipos
 val white_wool = <minecraft:wool:0>; // Branca
 
@@ -45,16 +45,16 @@ val elytra = <minecraft:elytra>;
 recipes.addShapeless(cactus_green, [leaves]);
 recipes.addShapeless(cactus_green, [leaves2]);
 
-# Abóbora -> 4 corantes laranja
+# AbÃ³bora -> 4 corantes laranja
 recipes.addShapeless(orange_dye * 4, [pumpkin]);
 
 # Cactus Green + Balde d'agua -> Slime Ball
 recipes.addShapeless(slime_ball * 4, [water_bucket, cactus_green]);
 
-# 1 corda + 2 papéis -> Etiqueta
+# 1 corda + 2 papÃ©is -> Etiqueta
 recipes.addShapedMirrored(name_tag, [[null, null, spider_string], [null, paper, null], [paper, null, null]]);
 
-# 1 lã branca -> 4 fios
+# 1 lÃ£ branca -> 4 fios
 recipes.addShapeless(spider_string * 4, [white_wool]);
 
 # Armadura de cavalo de ferro
