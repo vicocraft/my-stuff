@@ -23,6 +23,7 @@ val diamond_horse_armor = <minecraft:diamond_horse_armor>;
 
 # Metais
 val iron_ingot = <minecraft:iron_ingot>;
+val iron_nugget = <minecraft:iron_nugget>;
 val gold_ingot = <minecraft:gold_ingot>;
 val diamond = <minecraft:diamond>;
 
@@ -38,6 +39,7 @@ val paper = <minecraft:paper>;
 val spider_string = <minecraft:string>;
 val name_tag = <minecraft:name_tag>;
 val elytra = <minecraft:elytra>;
+val saddle = <minecraft:saddle>;
 
 
 // CRAFTING
@@ -68,6 +70,9 @@ recipes.addShapedMirrored(diamond_horse_armor, [[diamond, null, diamond], [diamo
 
 # Elytra
 recipes.addShaped(elytra, [[spider_string, spider_string, spider_string], [any_wool, null, any_wool], [any_wool, null, any_wool]]);
+
+# Sela
+recipes.addShaped(saddle, [[leather, leather, leather], [iron_nugget, spider_string, iron_nugget], [null, iron_nugget, null]]);
 
 // FORNALHAS
 
