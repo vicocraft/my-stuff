@@ -4,9 +4,31 @@
  */
 
 // CONSTANTES
-# Folhas (todos os tipos)
-val leaves = <minecraft:leaves:*>;
-val leaves2 = <minecraft:leaves2:*>;
+# Folhas
+val leaves = <minecraft:leaves:*>; // Todos os tipos 1
+val leaves2 = <minecraft:leaves2:*>; // Todos os tipos 2
+val oak_leaves = <minecraft:leaves:0>;
+val spruce_leaves = <minecraft:leaves:1>;
+val birch_leaves = <minecraft:leaves:2>;
+val jungle_leaves = <minecraft:leaves:3>;
+val acacia_leaves = <minecraft:leaves2:0>;
+val dark_oak_leaves = <minecraft:leaves2:1>;
+
+# Mudas
+val sapling = <minecraft:sapling:*>; // Todos os tipos
+val oak_sapling = <minecraft:sapling:0>;
+val spruce_sapling = <minecraft:sapling:1>;
+val birch_sapling = <minecraft:sapling:2>;
+val jungle_sapling = <minecraft:sapling:3>;
+val acacia_sapling = <minecraft:sapling:4>;
+val dark_oak_sapling = <minecraft:sapling:5>;
+
+# Solos/"Terras"
+val dirt = <minecraft:dirt:0>;
+val coarse_dirt = <minecraft:dirt:1>;
+val podzol = <minecraft:dirt:2>;
+val grass = <minecraft:grass>;
+val mycelium = <minecraft:mycelium>;
 
 # Corantes
 val cactus_green = <minecraft:dye:2>; // Verde
@@ -28,6 +50,7 @@ val gold_ingot = <minecraft:gold_ingot>;
 val diamond = <minecraft:diamond>;
 
 # Outros
+val stick = <minecraft:stick>;
 val water_bucket = <minecraft:water_bucket>;
 val slime_ball = <minecraft:slime_ball>;
 val pumpkin = <minecraft:pumpkin>;
@@ -40,12 +63,18 @@ val spider_string = <minecraft:string>;
 val name_tag = <minecraft:name_tag>;
 val elytra = <minecraft:elytra>;
 val saddle = <minecraft:saddle>;
+val brown_mushroom = <minecraft:brown_mushroom>;
+val red_mushroom = <minecraft:red_mushroom>;
 
 
 // CRAFTING
-# Folha -> Cactus Green
-recipes.addShapeless(cactus_green, [leaves]);
-recipes.addShapeless(cactus_green, [leaves2]);
+# Folhas + Graveto -> Muda
+recipes.addShaped(oak_sapling, [[null, null, null], [null, oak_leaves, null], [null, stick, null]]);
+recipes.addShaped(spruce_sapling, [[null, null, null], [null, spruce_leaves, null], [null, stick, null]]);
+recipes.addShaped(birch_sapling, [[null, null, null], [null, birch_leaves, null], [null, stick, null]]);
+recipes.addShaped(jungle_sapling, [[null, null, null], [null, jungle_leaves, null], [null, stick, null]]);
+recipes.addShaped(acacia_sapling, [[null, null, null], [null, acacia_leaves, null], [null, stick, null]]);
+recipes.addShaped(dark_oak_sapling, [[null, null, null], [null, dark_oak_leaves, null], [null, stick, null]]);
 
 # Abóbora -> 4 corantes laranja
 recipes.addShapeless(orange_dye * 4, [pumpkin]);
@@ -74,6 +103,10 @@ recipes.addShaped(elytra, [[spider_string, spider_string, spider_string], [any_w
 # Sela
 recipes.addShaped(saddle, [[leather, leather, leather], [iron_nugget, spider_string, iron_nugget], [null, iron_nugget, null]]);
 
+# Micélio
+recipes.addShaped(mycelium, [[null, null, null], [null, brown_mushroom, null], [null, dirt, null]]);
+recipes.addShaped(mycelium, [[null, null, null], [null, red_mushroom, null], [null, dirt, null]]);
+
 // FORNALHAS
 
 # Batata podre -> Batata
@@ -81,3 +114,7 @@ furnace.addRecipe(potato, poisonous_potato);
 
 # Carne podre -> Couro
 furnace.addRecipe(leather, rotten_flesh);
+
+# Folha -> Cactus Green
+recipes.addRecipe(cactus_green, leaves);
+recipes.addRecipe(cactus_green, leaves2);
