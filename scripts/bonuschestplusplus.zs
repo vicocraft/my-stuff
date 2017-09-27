@@ -12,6 +12,7 @@ import loottweaker.vanilla.loot.Functions;
 
 
 val bonuschest = LootTables.getTable("minecraft:chests/spawn_bonus_chest");
+
 val bed_gens = bonuschest.addPool("bed_gens", 1, 2, 0, 1);
 val compass_gens = bonuschest.addPool("compass_gens", 1, 1, 0, 1);
 val map_gens = bonuschest.addPool("map_gens", 1, 3, 0, 1);
