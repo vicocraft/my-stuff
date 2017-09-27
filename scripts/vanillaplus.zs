@@ -116,5 +116,5 @@ furnace.addRecipe(potato, poisonous_potato);
 furnace.addRecipe(leather, rotten_flesh);
 
 # Folha -> Cactus Green
-recipes.addRecipe(cactus_green, leaves);
-recipes.addRecipe(cactus_green, leaves2);
+furnace.addRecipe(cactus_green, leaves);
+furnace.addRecipe(cactus_green, leaves2);
