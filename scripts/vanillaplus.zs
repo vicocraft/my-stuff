@@ -66,15 +66,21 @@ val saddle = <minecraft:saddle>;
 val brown_mushroom = <minecraft:brown_mushroom>;
 val red_mushroom = <minecraft:red_mushroom>;
 
+# Plantas
+val tallgrassall = <minecraft:tallgrass:*>; // Todos os tipos
+val tallgrass = <minecraft:tallgrass:1>; // Apenas a grama
+val double_tallgrass = <minecraft:double_plant:2>; // Outra versão da grama
+val fern = <minecraft:tallgrass:2>; // Arbusto
+
 
 // CRAFTING
 # Folhas + Graveto -> Muda
-recipes.addShaped(oak_sapling, [[null, null, null], [null, oak_leaves, null], [null, stick, null]]);
-recipes.addShaped(spruce_sapling, [[null, null, null], [null, spruce_leaves, null], [null, stick, null]]);
-recipes.addShaped(birch_sapling, [[null, null, null], [null, birch_leaves, null], [null, stick, null]]);
-recipes.addShaped(jungle_sapling, [[null, null, null], [null, jungle_leaves, null], [null, stick, null]]);
-recipes.addShaped(acacia_sapling, [[null, null, null], [null, acacia_leaves, null], [null, stick, null]]);
-recipes.addShaped(dark_oak_sapling, [[null, null, null], [null, dark_oak_leaves, null], [null, stick, null]]);
+recipes.addShaped(oak_sapling, [[oak_leaves, null, null], [stick, null, null], [null, null, null]]);
+recipes.addShaped(spruce_sapling, [[spruce_leaves, null, null], [stick, null, null], [null, null, null]]);
+recipes.addShaped(birch_sapling, [[birch_leaves, null, null], [stick, null, null], [null, null, null]]);
+recipes.addShaped(jungle_sapling, [[jungle_leaves, null, null], [stick, null, null], [null, null, null]]);
+recipes.addShaped(acacia_sapling, [[acacia_leaves, null, null], [stick, null, null], [null, null, null]]);
+recipes.addShaped(dark_oak_sapling, [[dark_oak_leaves, null, null], [stick, null, null], [null, null, null]]);
 
 # Abóbora -> 4 corantes laranja
 recipes.addShapeless(orange_dye * 4, [pumpkin]);
@@ -104,8 +110,12 @@ recipes.addShaped(elytra, [[spider_string, spider_string, spider_string], [any_w
 recipes.addShaped(saddle, [[leather, leather, leather], [iron_nugget, spider_string, iron_nugget], [null, iron_nugget, null]]);
 
 # Micélio
-recipes.addShaped(mycelium, [[null, null, null], [null, brown_mushroom, null], [null, dirt, null]]);
-recipes.addShaped(mycelium, [[null, null, null], [null, red_mushroom, null], [null, dirt, null]]);
+recipes.addShaped(mycelium, [[brown_mushroom, null, null], [dirt, null, null], [null, null, null]]);
+recipes.addShaped(mycelium, [[red_mushroom, null, null], [dirt, null, null], [null, null, null]]);
+
+# Grama
+recipes.addShaped(grass, [[tallgrassall, null, null], [dirt, null, null], [null, null, null]]);
+recipes.addShaped(grass, [[double_tallgrass, null, null], [dirt, null, null], [null, null, null]]);
 
 // FORNALHAS
 
@@ -118,3 +128,7 @@ furnace.addRecipe(leather, rotten_flesh);
 # Folha -> Cactus Green
 furnace.addRecipe(cactus_green, leaves);
 furnace.addRecipe(cactus_green, leaves2);
+
+# Grama -> Cactus Green
+furnace.addRecipe(cactus_green, tallgrassall);
+furnace.addRecipe(cactus_green, double_tallgrass);
