@@ -96,7 +96,7 @@ recipes.addShaped(chainmail_leggings,
   [spider_string,null,spider_string],
   [iron_ingot,null,iron_ingot]]
 ); // Calças
-recipes.addShaped(chainmail_leggings,
+recipes.addShaped(chainmail_boots,
   [[null,null,null],
   [spider_string,null,spider_string],
   [iron_ingot,null,iron_ingot]]
