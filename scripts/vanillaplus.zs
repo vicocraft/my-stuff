@@ -72,8 +72,36 @@ val tallgrass = <minecraft:tallgrass:1>; // Apenas a grama
 val double_tallgrass = <minecraft:double_plant:2>; // Outra versão da grama
 val fern = <minecraft:tallgrass:2>; // Arbusto
 
+# Armadura de Cota de Malha
+val chainmail_helmet = <minecraft:chainmail_helmet>;
+val chainmail_chestplate = <minecraft:chainmail_chestplate>;
+val chainmail_leggings = <minecraft:chainmail_leggings>;
+val chainmail_boots = <minecraft:chainmail_boots>;
+
 
 // CRAFTING
+# Pepita de Ferro + Fio -> Armadura de Cota de Malha
+recipes.addShaped(chainmail_helmet,
+  [[iron_ingot,spider_string,iron_ingot],
+  [spider_string,null,spider_string],
+  [null,null,null]]
+); // Capacete
+recipes.addShaped(chainmail_chestplate,
+  [[spider_string,null,spider_string],
+  [iron_ingot,iron_ingot,iron_ingot],
+  [spider_string,iron_ingot,spider_string]]
+); // Peitoral
+recipes.addShaped(chainmail_leggings,
+  [[iron_ingot,spider_string,iron_ingot],
+  [spider_string,null,spider_string],
+  [iron_ingot,null,iron_ingot]]
+); // Calças
+recipes.addShaped(chainmail_leggings,
+  [[null,null,null],
+  [spider_string,null,spider_string],
+  [iron_ingot,null,iron_ingot]]
+); // Botas
+
 # Folhas + Graveto -> Muda
 recipes.addShaped(oak_sapling, [[oak_leaves, null, null], [stick, null, null], [null, null, null]]);
 recipes.addShaped(spruce_sapling, [[spruce_leaves, null, null], [stick, null, null], [null, null, null]]);
