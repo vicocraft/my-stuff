@@ -38,6 +38,12 @@ val orange_dye = <minecraft:dye:14>; // Laranja
 val any_wool = <minecraft:wool:*>; // Todos os tipos
 val white_wool = <minecraft:wool:0>; // Branca
 
+# Pó de Concreto
+val concrete_powder_def = <minecraft:concrete_powder>.definition; // Definição de Item (para usar em loops)
+
+# Concreto (Seco)
+val concrete_def = <minecraft:concrete>.definition; // Definição de Item (para usar em loops)
+
 # Armaduras para cavalo
 val iron_horse_armor = <minecraft:iron_horse_armor>;
 val golden_horse_armor = <minecraft:golden_horse_armor>;
@@ -101,6 +107,11 @@ recipes.addShaped(chainmail_boots,
   [spider_string,null,spider_string],
   [iron_ingot,null,iron_ingot]]
 ); // Botas
+
+# Adiciona todos os recipes de pó de concreto + agua -> concreto de uma vez
+for i in 0 to 16 {
+	recipes.addShapeless(concrete_def.makeStack(i), [concrete_powder_def.makeStack(i), water_bucket]);
+}
 
 # Folhas + Graveto -> Muda
 recipes.addShaped(oak_sapling, [[oak_leaves, null, null], [stick, null, null], [null, null, null]]);
